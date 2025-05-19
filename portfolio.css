@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.hero {
+    background-image: url(forestbg.jpg);
+    height: 100vh;
+    min-height: 650px;
+    min-width: 750px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.nav{
+    height: 10%;
+    align-content: center;
+    text-align: center;
+}
+
+.navtab{
+    color: white;
+    font-size: 35px;
+    margin: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2rem;
+}
+.welcome{
+    padding: 2vw;
+    width: 50vw;
+}
+.contact{
+    text-align: right;
+    padding: 3vw;
+}
+.contacttext{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    line-height: 1.3;
+}
+.aboutme {
+    height: 100vh;
+    min-height: 650px;
+    background-color: hsl(44, 12%, 76%);
+    display: flex;
+}
+.abouttitle{
+    margin-left: 5vw;
+    color: rgb(36, 36, 36);
+    text-align: right;
+}
+.abouttextside{
+    margin: 2vw;
+    width: 40vw;
+    text-align: right;
+    align-content: center;
+}
+.aboutimageside{
+    align-content: center;
+    margin: 2vw;
+    width: 40vw;
+}
+.abouttext{
+color: rgb(0, 0, 0);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 2rem;
+margin-left: 10vw;
+margin-top: 15px;
+}
+
+.aboutimage{
+    width: 30vw;
+    height: auto;
+}
+
+.contactme{
+    height: 100vh;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    color: white;
+    font-size: 5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px;
+}
+h1{
+    color: white;
+    font-size: 12rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;                   /* or your preferred color */
+  font-weight: normal;            /* adjust if it's too bold */
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: white; 
+  text-underline-offset: 3px; 
+  color: hsl(180, 14%, 95%);
+}
+
+
+
+
+
+
+@media (max-width: 1250px) {
+  .info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .welcome,
+  .contact {
+    width: 100%;
+    text-align: left;
+  }
+}
+
